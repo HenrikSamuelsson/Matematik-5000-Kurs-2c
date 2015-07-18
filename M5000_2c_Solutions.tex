@@ -6,8 +6,16 @@
 \usepackage {hyperref }
 \usepackage {enumerate}
 
+\newenvironment{absolutelynopagebreak}
+  {\par\nobreak\vfil\penalty0\vfilneg
+   \vtop\bgroup}
+  {\par\xdef\tpd{\the\prevdepth}\egroup
+   \prevdepth=\tpd}
+
+
 \begin{document}
 
+\begin{absolutelynopagebreak}
 \noindent {\bf 1103 }
 \begin{enumerate}[a)]
 \item $(5x + 2y) + (2x + y) = 5x + 2y + 2x + y = 7x + 3y$
@@ -15,7 +23,9 @@
 \item $9y - (5y - 3) = 9y - 5y + 3 = 4y + 3$
 \item $13x - (6x - 4) = 13x - 6x + 4 = 7x + 4£$ 
 \end{enumerate}
+\end{absolutelynopagebreak}
 
+\begin{absolutelynopagebreak}
 \noindent {\bf 1115 }
 \begin{enumerate}[a)]
 \item $3x = x + 16$\\
@@ -36,22 +46,28 @@ $x = 5$
 $5y - 2y - 7  + 7 = 2y - 2y + 11 + 7$\\
 $3y = 18$\\
 $y = 6$\\ 
-\end{enumerate} 
+\end{enumerate}
+\end{absolutelynopagebreak} 
 
+\begin{absolutelynopagebreak}
 \noindent {\bf 1139 }
 \begin{enumerate}[a)]
 \item $f(2) = 10 - 3 \cdot 2 = 10 - 6 = 4$
 \item $f(0) = 10 - 3 \cdot 0 = 10 - 0 = 10$
 \item $f(0) = 10 - 3 \cdot (-2) = 10 + 6 = 16$
 \item $f(0) = 10 - 3 \cdot 2a = 10 - 6a$
-\end{enumerate} 
+\end{enumerate}
+\end{absolutelynopagebreak} 
 
+\begin{absolutelynopagebreak}
 \noindent {\bf 1143 }
 \begin{enumerate}[a)]
 \item $f(x) = x^2 + 3$
 \item $f(x) = (x - 3)^2$
 \end{enumerate}
+\end{absolutelynopagebreak}
 
+\begin{absolutelynopagebreak}
 \noindent {\bf 1203 }
 \begin{enumerate}[a)]
 \item $k = 5, m = 3$
@@ -59,5 +75,6 @@ $y = 6$\\
 \item $k = 1, m = 0$
 \item $k = 0, m = 4$
 \end{enumerate}
+\end{absolutelynopagebreak}
 
 \end {document}
